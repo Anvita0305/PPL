@@ -21,6 +21,10 @@ session_start();
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap" rel="stylesheet">
 </head>
 
 
@@ -29,8 +33,9 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,40,121,1) 68%, rgba
 
 
     <br><br><br><br><br>
-
-    <div class="container col-3 card"  style="background-color:rgba(255, 255, 255, 0.342)">
+<h1 class="title" style="color:white;">Create a free Account on QUIZAPP</h1>
+<h1 class="title" style="color:white;font-family: 'Vujahday Script', cursive;">One Life. Go Achieve!</h1>
+    <div class="container col-5 card"  style="background-color:rgba(255, 255, 255, 0.342)">
 
         <div style="">
             <img src="Screenshot (79).png" alt="" id="person">
