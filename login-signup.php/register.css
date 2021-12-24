@@ -21,3 +21,10 @@
     height:3rem;
     width:3rem;
 }
+.btn1{
+    background-color: hsl(206, 21%, 94%);
+}
+.dec{
+    text-decoration: none;
+    position: relative;
+}

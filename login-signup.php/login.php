@@ -1,7 +1,4 @@
-
-
-
-  <?php
+<?php
 
 session_start();
 
@@ -24,15 +21,19 @@ session_start();
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap" rel="stylesheet">
+
 </head>
 
-<body style="background-image:url('Screenshot (82).png');background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;padding-bottom: 9rem;">
+<body style="background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,40,121,1) 68%, rgba(0,212,255,1) 100%);">
 
-    <br><br><br><br><br><br>
-    <div class="container col-3" id="loginform" style="background-color:rgba(255, 255, 255, 0.342)">
+    <br><br>
+    <h1 class="title" style="color:white;">Welcome To QUIZAPP. More power to you!</h1>
+    <h1 class="title" style="color:white;font-family: 'Vujahday Script', cursive;">One Life. Go Achieve!</h1>
+    <div class="container col-4" id="loginform" style="background-color:rgba(255, 255, 255, 0.342)">
         <div>
             <img src="Screenshot (79).png" alt="" id="person">
         </div>
@@ -60,15 +61,15 @@ session_start();
                     aria-describedby="passwordHelpBlock" name="password"
                     value="<?php if(isset($_COOKIE['passwordcookie'])){ echo $_COOKIE['passwordcookie'];}?>">
             </div>
-            <button style="border-radius:2rem;background-color: #36096d;
-background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);width:5rem;" name="submit">Login</button>
+            <button style="width:6rem;height:2.5rem;border-radius: 0.5rem;font: size 1.5rem;" name="submit">Login</button>
             <br><br>
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" name="rememberMe">
                 <label class="form-check-label" for="inlineCheckbox1">Remember Me</label>
             </div>
             <br><br>
-            <h5 style="text-align: center;">Don't have an Account?<a href="register.php" style="color:white;">Click Here</a></h5>
+            <h5 style="text-align: center;">Don't have an Account?<a href="register.php" style="color:white;">Click
+                    Here</a></h5>
         </form>
     </div>
     <?php
