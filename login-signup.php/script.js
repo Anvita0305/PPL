@@ -1,25 +1,8 @@
-var icon=document.getElementById('icon');
-
-icon.onclick=function(){
-    document.body.classList.toggle("dark-theme");
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  // When the DOM is ready, run this function
+  $(document).ready(function() {
+    //Set the carousel options
+    $('#quote-carousel').carousel({
+      pauseOnHover: true,
+      interval: 1700,
+    });
+      });

@@ -4,7 +4,65 @@ session_start();
 
 ?>
 
+<?php
+include "dbcon.php";
+if(isset($_POST['submit']))
+{
+$Name=mysqli_real_escape_string($con,$_POST['username']);
+$Email=mysqli_real_escape_string($con,$_POST['email']);
+$Mobnumber=mysqli_real_escape_string($con,$_POST['mobile']);
+$Password=mysqli_real_escape_string($con,$_POST['password']);
+$Confirmpassword=mysqli_real_escape_string($con,$_POST['confirmpassword']);
 
+$pass=password_hash($Password,PASSWORD_BCRYPT);
+$check=password_hash($Confirmpassword,PASSWORD_BCRYPT);
+
+$emailquery="select * from registration where Email='$Email'";
+$query=mysqli_query($con,$emailquery);
+$email_count=mysqli_num_rows($query);
+
+// if($email_count<0)
+{
+    if($Password===$Confirmpassword)
+    {
+        $insertquery="INSERT INTO registration (`id`, `Name`, `Email`, `Mobnumber`, `Password`, `Confirmpassword`) VALUES ('','$Name','$Email','$Mobnumber','$pass','$check') ";
+        $iquery=mysqli_query($con,$insertquery);
+        if($iquery)
+        {
+            ?>
+    <script>
+    "Data Inserted";
+    </script>
+    <?php
+        }
+        else{
+            ?>
+    <script>
+    "Try Again";
+    </script>
+    <?php
+        }
+    }
+    else{
+        ?>
+    <script>
+    "Incorrect Password!";
+    </script>
+    <?php
+    }
+    
+}
+// else
+{
+    ?>
+    <script>
+    "Email already exists!";
+    </script>
+    <?php
+}
+
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -91,71 +149,13 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,40,121,1) 68%, rgba
                 <input type="password" class="form-control" placeholder="Confirm Password" aria-label="Username"
                     aria-describedby="basic-addon1" name="confirmpassword">
             </div>
-            <button class="btn1" name="submit" style="width:6rem;height:2.5rem;border-radius: 0.5rem;"><a
-                    href="login.php" class="dec" style=" color: black;font: size 1rem;">Register</a></button>
+            <button class="btn1" name="submit" style="width:6rem;height:2.5rem;border-radius: 0.5rem;"><a href="login.php" class="dec" style=" color: black;font: size 1rem;">Register</a></button>
 
 
         </form>
         <h5 style="text-align: center;">Already Registered?<a href="login.php" style="color:white;">Login</a></h5>
     </div>
-    <?php
-include "dbcon.php";
-if(isset($_POST['submit']))
-{
-$Name=mysqli_real_escape_string($con,$_POST['username']);
-$Email=mysqli_real_escape_string($con,$_POST['email']);
-$Mobnumber=mysqli_real_escape_string($con,$_POST['mobile']);
-$Password=mysqli_real_escape_string($con,$_POST['password']);
-$Confirmpassword=mysqli_real_escape_string($con,$_POST['confirmpassword']);
-
-$pass=password_hash($Password,PASSWORD_BCRYPT);
-$check=password_hash($Confirmpassword,PASSWORD_BCRYPT);
-
-$emailquery="select * from registration where Email='$Email'";
-$query=mysqli_query($con,$emailquery);
-$email_count=mysqli_num_rows($query);
-
-if($email_count>0)
-{
-    ?>
-    <script>
-    "Email already exists!";
-    </script>
-    <?php
-}
-else
-{
-    if($Password===$Confirmpassword)
-    {
-        $insertquery="INSERT INTO `registration`( `Name`, `Email`, `Mobnumber`, `Password`, `Confirmpassword`) VALUES ('$Name','$Email','$Mobnumber','$pass','$check') ";
-        $iquery=mysqli_query($con,$insertquery);
-        if($iquery)
-        {
-            ?>
-    <script>
-    "Data Inserted";
-    </script>
-    <?php
-        }
-        else{
-            ?>
-    <script>
-    "Try Again";
-    </script>
-    <?php
-        }
-    }
-    else{
-        ?>
-    <script>
-    "Incorrect Password!";
-    </script>
-    <?php
-    }
-}
-
-}
-?>
+   
     <script src="script.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -164,3 +164,6 @@ else
 </body>
 
 </html>
+
+
+<!-- ( `Name`, `Email`, `Mobnumber`, `Password`, `Confirmpassword`) -->

@@ -18,13 +18,15 @@ session_start();
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
     <link href="register.css" rel="stylesheet">
+    <link href="login.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap" rel="stylesheet">
-
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 </head>
 
 <body style="background: rgb(2,0,36);
@@ -33,6 +35,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,40,121,1) 68%, rgba
     <br><br>
     <h1 class="title" style="color:white;">Welcome To QUIZAPP. More power to you!</h1>
     <h1 class="title" style="color:white;font-family: 'Vujahday Script', cursive;">One Life. Go Achieve!</h1>
+
     <div class="container col-4" id="loginform" style="background-color:rgba(255, 255, 255, 0.342)">
         <div>
             <img src="Screenshot (79).png" alt="" id="person">
@@ -61,7 +64,8 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,40,121,1) 68%, rgba
                     aria-describedby="passwordHelpBlock" name="password"
                     value="<?php if(isset($_COOKIE['passwordcookie'])){ echo $_COOKIE['passwordcookie'];}?>">
             </div>
-            <button style="width:6rem;height:2.5rem;border-radius: 0.5rem;font: size 1.5rem;" name="submit">Login</button>
+            <button style="width:6rem;height:2.5rem;border-radius: 0.5rem;font: size 1.5rem;"
+                name="submit">Login</button>
             <br><br>
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" name="rememberMe">
@@ -141,14 +145,18 @@ if(isset($_POST['submit']))
 
 ?>
 
-
-
-
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script>
+    // When the DOM is ready, run this function
+    $(document).ready(function() {
+        //Set the carousel options
+        $('#quote-carousel').carousel({
+            pauseOnHover: true,
+            interval: 1700,
+        });
+    });
     </script>
-
 </body>
-
 </html>
