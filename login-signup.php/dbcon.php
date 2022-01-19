@@ -1,26 +1,12 @@
 <?php
+$hostname     = "localhost"; 
+$username     = "root";
+$password     = ""; 
+$databasename = "signin";
 
-$username="root";
-$password="";
-$server="localhost";
-$db="ppl mini project";
+$conn = new mysqli($hostname, $username, $password,$databasename);
 
-$con=mysqli_connect($server,$username,$password,$db);
-
-if($con)
-{
-    ?>
-    <script>
-    alert("Connection Successful");
-    </script>
-    <?php
-}
-else{
-    ?>
-    <script>
-    alert("Connection Failed");
-    </script>
-    <?php
-}
-
+if ($conn->connect_error) { 
+die("Unable to Connect database: " . $conn->connect_error);
+ }
 ?>
