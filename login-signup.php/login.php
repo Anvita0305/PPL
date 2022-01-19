@@ -32,7 +32,7 @@ include('l-script.php');
     }
 
     .img {
-        background-image: url('Background_login.png');
+        background-image: url("Background_login.png");
         background-repeat: no-repeat;
         background-size: cover;
     }
