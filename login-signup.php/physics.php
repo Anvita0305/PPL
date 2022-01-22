@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap4.min.css"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+        background-image: url('phyBg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .chemText {
+        text-decoration: none;
+        color: black;
+    }
+
+    .phyText {
+        text-decoration: none;
+        color: black;
+    }
+        .chemText{
+            text-decoration:none;
+            color:black;
+        }
+        .mathsText{
+            text-decoration:none;
+            color:black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ====nav bar starts=== -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;z-index=3;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav" style="font-size:1.25rem">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php"><b>Test</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><b>Results</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="logout.php"><b>Logout</b></a>
+                    </li>
+                    <!-- <li class="nav-item">
+                                                            <a class="nav-link disabled">Results</a>
+                                                  </li> -->
+                </ul>
+
+            </div>
+        </div>
+        <div class="greet" id="greet" style="font-weight: 700;font-size: 1.5rem;float:right;padding-right:1rem;">
+            Welcome!</div>
+    </nav>
+    <!-- ====Nav Bar ends==== -->
+    <div class="container mb-3 mt-3"  style="background-color:white;">
+        <br>
+        <table class="table table-striped table-bordered mydatatable" style="width: 100%">
+            <thead>
+                <tr>
+                    <th>Topic</th>
+
+                    <th>No. of Que</th>
+                    <th>Difficulty Level</th>
+
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+
+                    <td>
+                        <a href="#">Rotational Motion</a>
+                    </td>
+                    <td>6</td>
+                    <td>Medium</td>
+
+                </tr>
+                <tr>
+
+                    <td>
+                        <a href="#">Semiconductor Physics</a>
+                    </td>
+                    <td>5</td>
+                    <td>Hard</td>
+
+                </tr>
+                <tr>
+
+                    <td>
+                        <a href="#">Ray Optics</a>
+                    </td>
+                    <td>6</td>
+                    <td>Medium</td>
+
+                </tr>
+                <tr>
+
+                    <td>
+                        <a href="#">Thermodynamics</a>
+                    </td>
+                    <td>5</td>
+                    <td>Medium</td>
+
+                </tr>
+                <tr>
+
+                    <td>
+                        <a href="#">Kinematics</a>
+                    </td>
+                    <td>5</td>
+                    <td>Easy</td>
+
+                </tr>
+
+
+
+
+            </tbody>
+            <tfoot>
+                <tr>
+
+                    <th>Total Questions in Course</th>
+                    <th>27</th>
+
+                </tr>
+
+            </tfoot>
+        </table>
+        <br>
+        <button type="button" class="btn btn-outline-dark"><a href="chem.php" class="chemText"><-Chemistry
+                Test</a></button>
+        <button type="button" class="btn btn-outline-dark" style="float:right;"><a href="maths.php" class="mathsText">Maths Test-></a></a></button>
+    <br><br>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/esm/createPopper.min.js"
+        integrity="sha512-MVa9hCW0H4yxT+gfVs4E+SYVcxJdhXhckF/TH78MRW1DW5PqqMUoprF7LOHFL45GfguE/trwMbnuPDqTY3uCLQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+
+    <script>
+    $('.mydatatable').DataTable();
+    </script>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+</script>
+
+</html>

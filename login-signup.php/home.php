@@ -99,10 +99,7 @@
                         <a class="nav-link active" aria-current="page" href="#"><b>Home</b></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><b>Practice</b></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><b>Test</b></a>
+                        <a class="nav-link" href="index.php"><b>Test</b></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"><b>Results</b></a>
@@ -211,7 +208,7 @@
                 </div>
             </div>
         </div>
-        <div class="card" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
+        <div class="card" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500"0>
             <div class="card_img">
                 <img src="coversAll.png" alt="Exam Pattern" class="card_img" style="width:22.5rem">
             </div>
