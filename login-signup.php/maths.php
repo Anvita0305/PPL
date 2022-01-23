@@ -18,12 +18,12 @@
 
     .chemText {
         text-decoration: none;
-        color: black;
+        color: white;
     }
 
     .phyText {
         text-decoration: none;
-        color: black;
+        color: white;
     }
     </style>
 </head>
@@ -40,7 +40,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav" style="font-size:1.25rem">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"><b>Home</b></a>
+                        <a class="nav-link active" aria-current="page" href="home.php"><b>Home</b></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.php"><b>Test</b></a>
@@ -62,7 +62,7 @@
             Welcome!</div>
     </nav>
     <!-- ====Nav Bar ends==== -->
-    <div class="container mb-3 mt-3" style="background-color:white;">
+    <div class="container mb-3 mt-3" style="background-color:white;border: 2px solid white;border-radius:2rem;">
         <br>
         <table class="table table-striped table-bordered mydatatable" style="width: 100%">
             <thead>
@@ -79,7 +79,7 @@
                 <tr>
 
                     <td>
-                        <a href="#"> Lapalce Transform</a>
+                        <a href="#" style="text-decoration: none;color: black;"> Lapalce Transform</a>
                     </td>
                     <td>5</td>
                     <td>Medium</td>
@@ -88,7 +88,7 @@
                 <tr>
 
                     <td>
-                        <a href="#">Linear Algebra</a>
+                        <a href="#" style="text-decoration: none;color: black;">Linear Algebra</a>
                     </td>
                     <td>5</td>
                     <td>Hard</td>
@@ -97,16 +97,16 @@
                 <tr>
 
                     <td>
-                        <a href="#">MultiVariate Calculus</a>
+                        <a href="#" style="text-decoration: none;color: black;">MultiVariate Calculus</a>
                     </td>
                     <td>5</td>
-                    <td>Medium</td>
+                    <td>Medium</td> 
 
                 </tr>
                 <tr>
 
                     <td>
-                        <a href="#">Univariate Calculus</a>
+                        <a href="#" style="text-decoration: none;color: black;">Univariate Calculus</a>
                     </td>
                     <td>5</td>
                     <td>Easy</td>
@@ -115,7 +115,7 @@
                 <tr>
 
                     <td>
-                        <a href="#">Ordinary Differential Equation</a>
+                        <a href="#" style="text-decoration: none;color: black;">Ordinary Differential Equation</a>
                     </td>
                     <td>5</td>
                     <td>Easy</td>
@@ -142,9 +142,9 @@
 
         </table>
         <br><br>
-        <button type="button" class="btn btn-outline-dark"><a href="chem.php" class="chemText">
+        <button type="button" class="btn btn-dark"><a href="chem.php" class="chemText">
                 <-Chemistry Test</a></button>
-        <button type="button" class="btn btn-outline-dark" style="float:right;"><a href="physics.php"
+        <button type="button" class="btn btn-dark" style="float:right;"><a href="physics.php"
                 class="phyText">Physics Test-></a></a></button>
         <br><br>
     </div>

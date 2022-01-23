@@ -151,7 +151,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav" style="font-size:1.25rem">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"><b>Home</b></a>
+                            <a class="nav-link active" aria-current="page" href="home.php"><b>Home</b></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="index.php"><b>Test</b></a>

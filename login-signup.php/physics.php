@@ -20,20 +20,20 @@
 
     .chemText {
         text-decoration: none;
-        color: black;
+        color: white;
     }
 
     .phyText {
         text-decoration: none;
-        color: black;
+        color: white;
     }
         .chemText{
             text-decoration:none;
-            color:black;
+            color:white;
         }
         .mathsText{
             text-decoration:none;
-            color:black;
+            color:white;
         }
     </style>
 </head>
@@ -50,7 +50,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav" style="font-size:1.25rem">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"><b>Home</b></a>
+                        <a class="nav-link active" aria-current="page" href="home.php"><b>Home</b></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.php"><b>Test</b></a>
@@ -72,7 +72,7 @@
             Welcome!</div>
     </nav>
     <!-- ====Nav Bar ends==== -->
-    <div class="container mb-3 mt-3"  style="background-color:white;">
+    <div class="container mb-3 mt-3"  style="background-color:white;border: 2px solid white;border-radius:2rem;">
         <br>
         <table class="table table-striped table-bordered mydatatable" style="width: 100%">
             <thead>
@@ -89,7 +89,7 @@
                 <tr>
 
                     <td>
-                        <a href="#">Rotational Motion</a>
+                        <a href="#" style="text-decoration: none;color: black;">Rotational Motion</a>
                     </td>
                     <td>6</td>
                     <td>Medium</td>
@@ -98,7 +98,7 @@
                 <tr>
 
                     <td>
-                        <a href="#">Semiconductor Physics</a>
+                        <a href="#" style="text-decoration: none;color: black;">Semiconductor Physics</a>
                     </td>
                     <td>5</td>
                     <td>Hard</td>
@@ -107,7 +107,7 @@
                 <tr>
 
                     <td>
-                        <a href="#">Ray Optics</a>
+                        <a href="#" style="text-decoration: none;color: black;">Ray Optics</a>
                     </td>
                     <td>6</td>
                     <td>Medium</td>
@@ -116,7 +116,7 @@
                 <tr>
 
                     <td>
-                        <a href="#">Thermodynamics</a>
+                        <a href="#" style="text-decoration: none;color: black;">Thermodynamics</a>
                     </td>
                     <td>5</td>
                     <td>Medium</td>
@@ -125,7 +125,7 @@
                 <tr>
 
                     <td>
-                        <a href="#">Kinematics</a>
+                        <a href="#" style="text-decoration: none;color: black;">Kinematics</a>
                     </td>
                     <td>5</td>
                     <td>Easy</td>
@@ -147,9 +147,9 @@
             </tfoot>
         </table>
         <br>
-        <button type="button" class="btn btn-outline-dark"><a href="chem.php" class="chemText"><-Chemistry
+        <button type="button" class="btn btn-dark"><a href="chem.php" class="chemText"><-Chemistry
                 Test</a></button>
-        <button type="button" class="btn btn-outline-dark" style="float:right;"><a href="maths.php" class="mathsText">Maths Test-></a></a></button>
+        <button type="button" class="btn btn-dark" style="float:right;"><a href="maths.php" class="mathsText">Maths Test-></a></a></button>
     <br><br>
     </div>
 

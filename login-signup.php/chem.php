@@ -12,12 +12,12 @@
     <style>
     .chemText {
         text-decoration: none;
-        color: black;
+        color:white;
     }
 
     .phyText {
         text-decoration: none;
-        color: black;
+        color:white;
     }
     </style>
 </head>
@@ -34,7 +34,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav" style="font-size:1.25rem">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"><b>Home</b></a>
+                        <a class="nav-link active" aria-current="page" href="home.php"><b>Home</b></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.php"><b>Test</b></a>
@@ -56,84 +56,64 @@
             Welcome!</div>
     </nav>
     <!-- ====Nav Bar ends==== -->
-    <div class="container mb-3 mt-3" style="background-color:white;">
+    <div class="container mb-3 mt-3" style="background-color:white;border: 2px solid white;border-radius:2rem;">
         <br>
         <table class="table table-striped table-bordered mydatatable" style="width: 100%">
             <thead>
                 <tr>
                     <th>Topic</th>
-
                     <th>No. of Que</th>
                     <th>Difficulty Level</th>
-
                 </tr>
-
             </thead>
             <tbody>
                 <tr>
-
                     <td>
-                        <a href="#">Carboxylic Acids,Ester</a>
+                        <a href="#" style="text-decoration: none;color: black;">Carboxylic Acids,Ester</a>
                     </td>
                     <td>6</td>
                     <td>Medium</td>
-
                 </tr>
                 <tr>
-
                     <td>
-                        <a href="#">Alcohol,Phenol,Ether</a>
+                        <a href="#" style="text-decoration: none;color: black;">Alcohol,Phenol,Ether</a>
                     </td>
                     <td>5</td>
                     <td>Easy</td>
-
                 </tr>
                 <tr>
-
                     <td>
-                        <a href="#">Aldehydes,Ketones</a>
+                        <a href="#" style="text-decoration: none;color: black;">Aldehydes,Ketones</a>
                     </td>
                     <td>6</td>
                     <td>Medium</td>
-
                 </tr>
                 <tr>
-
                     <td>
-                        <a href="#">Inorganic Chemistry</a>
+                        <a href="#" style="text-decoration: none;color: black;">Inorganic Chemistry</a>
                     </td>
                     <td>5</td>
                     <td>Easy</td>
-
                 </tr>
                 <tr>
-
                     <td>
-                        <a href="#">Physical Chemistry</a>
+                        <a href="#" style="text-decoration: none;color: black;">Physical Chemistry</a>
                     </td>
                     <td>5</td>
                     <td>Hard</td>
-
                 </tr>
-
-
-
-
             </tbody>
             <tfoot>
                 <tr>
-
                     <th>Total Questions in Course</th>
                     <th>27</th>
-
                 </tr>
-
             </tfoot>
         </table>
         <br><br>
-        <button type="button" class="btn btn-outline-dark"><a href="maths.php" class="chemText">
+        <button type="button" class="btn btn-dark"><a href="maths.php" class="chemText">
                 <-Maths Test</a></button>
-        <button type="button" class="btn btn-outline-dark" style="float:right;margin-right 1rem;"><a href="physics.php"
+        <button type="button" class="btn btn-dark" style="float:right;margin-right 1rem;"><a href="physics.php"
                 class="phyText">Physics Test-></a></a></button>
         <br><br>
     </div>
