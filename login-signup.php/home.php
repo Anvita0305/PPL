@@ -25,14 +25,12 @@
         background-image: url('background_home.png');
         background-repeat: no-repeat;
         background-size: cover;
-        z-index=2;
     }
     .main_content {
         display: flex;
         flex-direction: row;
         justify-content: center;
         padding: 1.5rem;
-        z-index=1;
     }
 
     .card {
@@ -83,48 +81,12 @@
 </head>
 
 <body class="img">
-    <!-- <canvas id="canvas" width="1920" height="922"></canvas> -->
 
-    <!-- ====nav bar starts=== -->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;z-index=3;">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav" style="font-size:1.25rem">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"><b>Home</b></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.php"><b>Test</b></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><b>Results</b></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="logout.php"><b>Logout</b></a>
-                    </li>
-                    <!-- <li class="nav-item">
-                                                            <a class="nav-link disabled">Results</a>
-                                                  </li> -->
-                </ul>
-
-            </div>
-        </div>
-        <div class="greet" id="greet" style="font-weight: 700;font-size: 1.5rem;float:right;padding-right:1rem;">
-            Welcome!</div>
-    </nav>
-    <!-- ====Nav Bar ends==== -->
 
     <!-- =====home page styling starts==== -->
-    <br>
+    
     <h1 class="head">Why Us?</h1>
-    <hr>
-    <hr>
-    <div class="main_content">
+     <div class="main_content"> 
         <div class="card" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500" >
             <div class="card_img">
                 <img src="exam pattern.png" alt="Exam Pattern" class="card_img" style="width:22.5rem">
@@ -223,12 +185,21 @@
                     Possimus molestias molestiae alias.
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
     <!-- =====home page styling ends==== -->
 <br><br><br><br><br>
     <!-- ====footer starts==== -->
     <footer class="foot">
+        <div style="float:left;">
+            <h4>Quick Links</h4>
+            <ul style="list-style: none;text-decoration: none;color: white;magrin-left:-1rem;">
+                <li><a href="home.php" style="list-style: none;text-decoration: none;color: white;magrin-left:-1rem;">Home</a></li>
+                <li><a href="index.php" style="list-style: none;text-decoration: none;color: white;magrin-left:-1rem;">Tests</a></li>
+                <li><a href="#" style="list-style: none;text-decoration: none;color: white;magrin-left:-1rem;">Results</a></li>
+                <li><a href="logout.php" style="list-style: none;text-decoration: none;color: white;magrin-left:-1rem;">Logout</a></li>
+            </ul>
+        </div>
         <h3>Connect with us </h3>
         <br>
         <div>
