@@ -14,7 +14,7 @@
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js">
     </script>
-    <title>JS Quiz</title>
+    <title>Laplace Quiz</title>
     <style>
         h1 {
             font-family: 'Gabriola', serif;
@@ -44,18 +44,19 @@
         .quizContainer {
             background-color: #eae0e7;
             /* background: linear-gradient(90deg,rgb(238, 163, 234), rgb(65, 17, 53)); */
-            border-radius: 6px;
-            width: 500px;
-            height: 365px;
+            border-radius: 3rem;
+            width: 60%;
+            height: 90%;
 
             margin: auto;
             padding-top: 5px;
-
+            box-sizing: border-box;
+            box-shadow: 10px 10px 5px #888;
 
 
             /*-moz-box-shadow: 10px 10px 5px #888;
     -webkit-box-shadow: 10px 10px 5px #888;
-    box-shadow: 10px 10px 5px #888;*/
+    
             position: relative;
         }
 
@@ -68,18 +69,17 @@
                               margin: auto;
                               padding-top: 5px;
                     } */
-
+                }
         .quizcontainer #quiz1 {
             /* text-shadow: 1px 1px 2px orange; */
             font-family: "Georgia", Arial, sans-serif;
-
         }
 
         .nextButton {
             box-shadow: 3px 3px 5px #888;
             border-radius: 6px;
             /* width: 150px;*/
-            height: 40px;
+            height: 50px;
             text-align: center;
             background: rgb(127, 23, 131);
             /*clear: both;*/
@@ -98,7 +98,7 @@
             box-shadow: 3px 3px 5px #888;
             border-radius: 6px;
             /*width: 150px;*/
-            height: 40px;
+            height: 50px;
             text-align: center;
             background: rgb(127, 23, 131);
             /*clear: both;*/
@@ -137,7 +137,7 @@
 
         .question {
             font-family: 'Century', serif;
-            font-size: 1.5em;
+            font-size: 3rem;
             font-weight: bold;
             width: 100%;
             height: auto;
@@ -166,8 +166,9 @@
         .choiceList {
             font-family: 'Arial', serif;
             color: black;
-            font-size: 15px;
+            font-size: 2.5rem;
             font-weight: bold;
+            /* text-align: center; */
         }
 
         .result {
@@ -187,6 +188,27 @@
         }
 
         /* End of Quiz Classes */
+        @media screen and (max-width: 720px) {
+            .quizContainer {
+            background-color: #eae0e7;
+            /* background: linear-gradient(90deg,rgb(238, 163, 234), rgb(65, 17, 53)); */
+            border-radius: 3rem;
+            width: 100%;
+            height: 100%;
+
+            margin: auto;
+            padding-top: 5px;
+            box-sizing: border-box;
+            box-shadow: 10px 10px 5px #888;
+            }
+            .choiceList {
+            font-family: 'Arial', serif;
+            color: black;
+            font-size: 2rem;
+            font-weight: bold;
+            /* text-align: center; */
+        }
+}
     </style>
 
 <body style="background: linear-gradient(45deg, rgb(28, 46, 21),rgb(199, 223, 95));">
@@ -196,9 +218,9 @@
             <!-- 			<h3>KGCAS - Javascript FDP 2018</h3>
 			<center><img class="img-responsive" height="180" width="180" src="http://res.cloudinary.com/dwjej2tbp/image/upload/v1523002021/KGCAS_SK_eyehy9.jpg"></center> -->
         </div>
-        <div style="background: linear-gradient(90deg,rgb(238, 163, 234), rgb(65, 17, 53)); height:75px"
+        <div style="background: linear-gradient(90deg,rgb(238, 163, 234), rgb(65, 17, 53)); height:135px;border-radius:3rem;"
             class=" container-fluid well well-lg">
-            <h4 style="color:white;position:absolute;left:67%;top:5%; " align:center;><span id="iTimeShow">Time Left:
+            <h4 style="color:white;float:right; " align:center;><span id="iTimeShow">Time Left:
                 </span><br /><span id='timer' style="font-size:25px;"></span></h4>
             <!-- <h2 style="position:absolute;right:55%;top:4%">Laplace Quiz</h2> -->
             <!-- <div class="container">
@@ -210,7 +232,7 @@
                                             </h5>
                                             <div class="card-body">
                                                 <div class="booth"> -->
-            <video style="position:absolute;right:70%;top:0ex" id="video" width="100px" height="85px" autoplay>
+            <video style="float:left;margin-left:-1.55rem;margin-top:-5.75rem;border-radius:2rem" id="video" width="150px" height="205px" autoplay>
             </video>
             <!-- </div> -->
 
@@ -222,12 +244,13 @@
                             </div>-->
 
         </div>
-
-
+        <br><br>
         <div class="question"></div>
+        <br><br>
         <ul class="choiceList"></ul>
         <div class="quizMessage"></div>
         <div class="result"></div>
+        <br><br><br><br>
         <button class="preButton" onclick="Review()">Previous Question</button>
         <button class="nextButton">Next Question</button>
         <!-- <button class="clearchoice">Clear Choice</button> -->
@@ -318,6 +341,7 @@
     var iSelectedAnswer = [];
     var c = 10;
     var t;
+    
     $(document).ready(function () {
         // Display the first question
         displayCurrentQuestion();
@@ -435,7 +459,7 @@
     });
 
 
-
+    var final=correctAnswers;
     function timedCount() {
         if (c == 185) {
             return false;
