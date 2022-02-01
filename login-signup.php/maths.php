@@ -30,7 +30,7 @@
 
 <body>
     <!-- ====nav bar starts=== -->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;z-index=3;">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -79,7 +79,7 @@
                 <tr>
 
                     <td>
-                        <a href="#" style="text-decoration: none;color: black;"> Lapalce Transform</a>
+                        <a href="laplace.php" style="text-decoration: none;color: black;"> Lapalce Transform</a>
                     </td>
                     <td>5</td>
                     <td>Medium</td>

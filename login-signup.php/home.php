@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -83,7 +83,7 @@
 <body class="img">
 
 <!-- ====nav bar starts=== -->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;z-index=3;">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -225,11 +225,11 @@
     <footer class="foot">
         <div style="float:left;">
             <h4>Quick Links</h4>
-            <ul style="list-style: none;text-decoration: none;color: white;magrin-left:-1rem;">
-                <li><a href="home.php" style="list-style: none;text-decoration: none;color: white;magrin-left:-1rem;">Home</a></li>
-                <li><a href="index.php" style="list-style: none;text-decoration: none;color: white;magrin-left:-1rem;">Tests</a></li>
-                <li><a href="#" style="list-style: none;text-decoration: none;color: white;magrin-left:-1rem;">Results</a></li>
-                <li><a href="logout.php" style="list-style: none;text-decoration: none;color: white;magrin-left:-1rem;">Logout</a></li>
+            <ul style="list-style: none;text-decoration: none;color: white;margin-left:-1rem;">
+                <li><a href="home.php" style="list-style: none;text-decoration: none;color: white;margin-left:-1rem;">Home</a></li>
+                <li><a href="index.php" style="list-style: none;text-decoration: none;color: white;margin-left:-1rem;">Tests</a></li>
+                <li><a href="#" style="list-style: none;text-decoration: none;color: white;margin-left:-1rem;">Results</a></li>
+                <li><a href="logout.php" style="list-style: none;text-decoration: none;color: white;margin-left:-1rem;">Logout</a></li>
             </ul>
         </div>
         <h3>Connect with us </h3>
