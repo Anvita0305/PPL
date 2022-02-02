@@ -22,7 +22,7 @@
         text-align: center;
     }
     .img{
-        background-image: url('background_home.png');
+        background-image: url('Bg.png');
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -58,7 +58,7 @@
     }
     @media (max-width: 767px) {
         .img {
-            background-image: url('Background_home.png');
+            background-image: url('Bg.png');
             background-repeat: no-repeat;
             background-size: cover;
         }
@@ -123,7 +123,6 @@
             <div class="card_img">
                 <img src="exam pattern.png" alt="Exam Pattern" class="card_img" style="width:22.5rem">
             </div>
-            <hr>
             <div class="card_text">
                 <div class="card_heading">
                     <h3>Latest Exam Patterns</h3>
@@ -225,11 +224,11 @@
     <footer class="foot">
         <div style="float:left;">
             <h4>Quick Links</h4>
-            <ul style="list-style: none;text-decoration: none;color: white;margin-left:-1rem;">
-                <li><a href="home.php" style="list-style: none;text-decoration: none;color: white;margin-left:-1rem;">Home</a></li>
-                <li><a href="index.php" style="list-style: none;text-decoration: none;color: white;margin-left:-1rem;">Tests</a></li>
-                <li><a href="contact.php" style="list-style: none;text-decoration: none;color: white;margin-left:-1rem;">Contact Us</a></li>
-                <li><a href="logout.php" style="list-style: none;text-decoration: none;color: white;margin-left:-1rem;">Logout</a></li>
+            <ul style="list-style: none;text-decoration: none;color: black;margin-left:-1rem;">
+                <li><a href="home.php" style="list-style: none;text-decoration: none;color: black;margin-left:-1rem;">Home</a></li>
+                <li><a href="index.php" style="list-style: none;text-decoration: none;color: black;margin-left:-1rem;">Tests</a></li>
+                <li><a href="contact.php" style="list-style: none;text-decoration: none;color: black;margin-left:-1rem;">Contact Us</a></li>
+                <li><a href="logout.php" style="list-style: none;text-decoration: none;color: black;margin-left:-1rem;">Logout</a></li>
             </ul>
         </div>
         <h3>Connect with us </h3>

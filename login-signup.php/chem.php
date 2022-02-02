@@ -24,7 +24,7 @@
 
 <body style="background-image: url('chemBg.png');background-repeat: no-repeat;background-size: cover;">
     <!-- ====nav bar starts=== -->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;z-index=3;">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -113,7 +113,7 @@
         <br><br>
         <button type="button" class="btn btn-dark"><a href="maths.php" class="chemText">
                 <-Maths Test</a></button>
-        <button type="button" class="btn btn-dark" style="float:right;margin-right 1rem;"><a href="physics.php"
+        <button type="button" class="btn btn-dark" style="float:right;margin-right:1rem;"><a href="physics.php"
                 class="phyText">Physics Test-></a></a></button>
         <br><br>
     </div>
