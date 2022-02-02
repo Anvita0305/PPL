@@ -44,8 +44,8 @@
             background-color: #eae0e7;
             /* background: linear-gradient(90deg,rgb(238, 163, 234), rgb(65, 17, 53)); */
             border-radius: 3rem;
-            width: 60%;
-            height: 90%;
+            width: 200px;
+            height: 400px;
 
             margin: auto;
             padding-top: 5px;
@@ -62,7 +62,7 @@
             box-shadow: 3px 3px 5px #888;
             border-radius: 6px;
             /* width: 150px;*/
-            height: 50px;
+            height: 60px;
             text-align: center;
             background: rgb(127, 23, 131);
             /*clear: both;*/
@@ -70,7 +70,7 @@
             font-family: 'Gabriola', serif;
             position: relative;
             margin: auto;
-            font-size: 25px;
+            font-size: 45px;
             font-weight: bold;
             padding-top: 5px;
             float: right;
@@ -88,18 +88,19 @@
             color: white;
             font-family: 'Gabriola', serif;
             position: relative;
-            margin: auto;
-            font-size: 25px;
+            margin-left:60px;
+            font-size: 30px;
             font-weight: bold;
             padding-top: 10px;
             padding-left: 10px;
+            
         }
 
         .preButton {
             box-shadow: 3px 3px 5px #888;
             border-radius: 6px;
             /*width: 150px;*/
-            height: 50px;
+            height: 60px;
             text-align: center;
             background: rgb(127, 23, 131);
             /*clear: both;*/
@@ -107,7 +108,7 @@
             font-family: 'Gabriola', serif;
             position: relative;
             margin: auto;
-            font-size: 25px;
+            font-size: 45px;
             font-weight: bold;
             padding-top: 5px;
             float: left;
@@ -183,7 +184,7 @@
             font-family: 'Verdana', serif;
             font-weight: bold;
             position: absolute;
-            top: 175px;
+            top: 320px;
             left: 30%;
         }
 
@@ -213,19 +214,21 @@
         }
     </style>
 
-<body style="background: linear-gradient(45deg, rgb(28, 46, 21),rgb(199, 223, 95));">
+<body style="background: linear-gradient(45deg, rgb(28, 46, 21),rgb(199, 223, 95)); ">
     <div>
-        <div class="quizContainer container-fluid well well-lg" style="width:80rem;height:70rem;">
+        <div class="quizContainer container-fluid well well-lg" style="width:100rem;height:72rem;">
             <div id="quiz1" class="text-center">
 
             </div>
-            <div style="background: linear-gradient(90deg,rgb(238, 163, 234), rgb(65, 17, 53)); height:135px;border-radius:3rem;" class=" container-fluid well well-lg">
+            <div style="background: linear-gradient(90deg,rgb(238, 163, 234), rgb(65, 17, 53));font-size:40px; height:145px;border-radius:3rem;" class=" container-fluid well well-lg">
                 <h4 style="color:white;float:right; " align:center;><span id="iTimeShow">Time Left:
-                    </span><br /><span id='timer' style="font-size:25px;"></span></h4>
-                <span>
-                    <button class="endButton">End Test</button>
-                </span>
-                <video style="float:left;margin-left:-1.55rem;margin-top:-5.75rem;border-radius:2rem" id="video" width="150px" height="205px" autoplay>
+                    </span><br /><span id='timer' style="font-size:40px;"></span></h4>
+                
+                    <!-- <a href="maths.php" style=" position:absolute;right:65%;bottom:85%;font-size=40px;">End Test</a> -->
+                    <!-- <a style=" position:absolute;right:65%;bottom:85% " class="btn btn-primary" href="maths.php" role="button">Exit</a> -->
+                   
+                
+                <video style="position:absolute;right:65%;bottom:76%" id="video" width="175px" height="205px" autoplay>
                 </video>
 
             </div>
@@ -236,7 +239,8 @@
             <div class="quizMessage"></div>
             <div class="result"></div>
             <br><br><br><br>
-            <button class="preButton" onclick="Review()">Previous Question</button>
+            <button class="preButton" onclick="Review()">Previous Question
+          
             <button class="nextButton">Next Question</button>
             <div class="start_cam">
 
@@ -280,47 +284,47 @@
         start();
     });
     var questions = [{
-        question: "1. How do you write 'Hello World' in an alert box?",
-        choices: ["msg('Hello World')", "msgBox('Hello World');", "alertBox('Hello World');",
-            "alert('Hello World');"
+        question: "1. Laplace transform of a unit impulse function is",
+        choices: ["s", "0", "e-s;",
+            "1"
         ],
         correctAnswer: 3
     }, {
-        //     question: "2. How to empty an array in JavaScript?",
-        //     choices: ["arrayList[]", "arrayList(0)", "arrayList.length=0", "arrayList.len(0)"],
-        //     correctAnswer: 2
-        // }, {
-        //     question: "3. What function to add an element at the begining of an array and one at the end?",
-        //     choices: ["push,unshift", "unshift,push", "first,push", "unshift,last"],
-        //     correctAnswer: 1
-        // }, {
-        //     question: "4. What will this output? var a = [1, 2, 3]; console.log(a[6]);",
-        //     choices: ["undefined", "0", "prints nothing", "Syntax error"],
-        //     correctAnswer: 0
-        // }, {
-        //     question: "5. What would following code return? console.log(typeof typeof 1);",
-        //     choices: ["string", "number", "Syntax error", "undefined"],
-        //     correctAnswer: 0
-        // },{
-        // 	question: "6. Which software company developed JavaScript?",
-        //     choices: ["Mozilla", "Netscape", "Sun Microsystems", "Oracle"],
-        //     correctAnswer: 1
-        // },{
-        // 	question: "7. What would be the result of 3+2+'7'?",
-        //     choices: ["327", "12", "14", "57"],
-        //     correctAnswer: 3
-        // },{
-        // 	question: "8. Look at the following selector: $('div'). What does it select?",
-        //     choices: ["The first div element", "The last div element", "All div elements", "Current div element"],
-        //     correctAnswer: 2
-        // },{
-        // 	question: "9. How can a value be appended to an array?",
-        //     choices: ["arr(length).value;", "arr[arr.length]=value;", "arr[]=add(value);", "None of these"],
-        //     correctAnswer: 1
-        // },{
-        question: "10. What will the code below output to the console? console.log(1 +  +'2' + '2');",
-        choices: ["'32'", "'122'", "'13'", "'14'"],
-        correctAnswer: 0
+            question: "2. Laplace transforms of the function e^-2t is",
+            choices: ["1/2s", "s+2", "1/s+2", "2s"],
+            correctAnswer: 2
+        }, {
+            question: "3. The integral of a step function is",
+            choices: ["A ramp function","An impulse function","Modified ramp function","A sinusoidal function"],
+            correctAnswer: 0
+        }, {
+            question: "4. The final value of the function (s+6)/s(s+3)",
+            choices: ["1", "0", "2", "3"],
+            correctAnswer: 2
+        }, {
+            question: "5.L(f * g) = L(f).L(g)",
+            choices: ["true", "false", "cant say", "none"],
+            correctAnswer: 0
+        },{
+        	question: "6.L(f') = sL(f) - f(0)",
+            choices: ["true", "false", "cant say", "none"],
+            correctAnswer: 0
+        },{
+        	question: "7.The unit step is not defined at",
+            choices: ["3", "2", "1", "0"],
+            correctAnswer: 3
+        },{
+        	question: "8.Laplace transform a changes any function from s-domain to t-domain.",
+            choices: ["true", "false", "cant say", "none"],
+            correctAnswer: 1
+        },{
+        	question: "9.Laplace transform if sin(at)u(t) is?",
+            choices: ["s /a2+s2","a /a2+s2"," s2 /a2+s2"," a2 / a2+s2"],
+            correctAnswer: 1
+        },{
+        question: "10.What is the laplace of e^6t",
+        choices: ["6/s-6", "2/s+12", "1/s-6", "1/s+6"],
+        correctAnswer: 2
     }];
 
 
@@ -329,7 +333,7 @@
     var correctAnswers = 0;
     var quizOver = false;
     var iSelectedAnswer = [];
-    var c = 10;
+    var c = 1200;
     var t;
 
     $(document).ready(function() {
@@ -365,8 +369,8 @@
                 // function Review() {
                 //     window.open("review.html", "_blank");
                 // }
-                $(document).find(".preButton").text("Previous Question");
-                $(document).find(".nextButton").text("Next Question");
+                $(document).find(".preButton").text("Review");
+                $(document).find(".nextButton").text("Restart");
                 $(document).find(".endButton").text("Analysis");
 
                 viewResults();
@@ -409,7 +413,7 @@
                         c = 185;
                         $(document).find(".preButton").text("Review");
                         $(document).find(".nextButton").text("Restart");
-                        $(document).find(".endButton").text("View Analysis").on("click", scrollDown());
+                        // $(document).find(".endButton").text("View Analysis").on("click", scrollDown());
                         $(this).find(".start_cam").on("click", stop());
 
 
@@ -429,11 +433,11 @@
                 quizOver = false;
                 $('#iTimeShow').html('Time Remaining:');
                 iSelectedAnswer = [];
-                $(document).find(".nextButton").text("Next Question");
-                $(document).find(".preButton").text("Previous Question");
+                $(document).find(".nextButton").text("Restart");
+                $(document).find(".preButton").text("Review");
                 $(document).find(".endButton").text("Analysis");
-
-                // $(".preButton").attr('disabled', 'disabled');
+                
+                $(".preButton").attr('disabled', 'disabled');
                 $(this).find(".start_cam").on("click", start());
                 resetQuiz();
                 viewingAns = 1;
@@ -527,11 +531,21 @@
             choice = questions[currentQuestion].choices[i];
 
             if (iSelectedAnswer[currentQuestion] == i) {
-                $('<li><input type="radio" class="radio-inline" checked="checked"  value=' + i + ' name="dynradio" />' +
-                    ' ' + choice + '</li>').appendTo(choiceList);
+                if (questions[currentQuestion].correctAnswer == i) {
+                    $('<li style="border:2px solid green;margin-top:10px;"><input type="radio" class="radio-inline" checked="checked"  value=' +
+                        i + ' name="dynradio" />' + ' ' + choice + '</li>').appendTo(choiceList);
+                } else {
+                    $('<li style="border:2px solid red;margin-top:10px;"><input type="radio" class="radio-inline" checked="checked"  value=' +
+                        i + ' name="dynradio" />' + ' ' + choice + '</li>').appendTo(choiceList);
+                }
             } else {
-                $('<li><input type="radio" class="radio-inline" value=' + i + ' name="dynradio" />' + ' ' + choice +
-                    '</li>').appendTo(choiceList);
+                if (questions[currentQuestion].correctAnswer == i) {
+                    $('<li style="border:2px solid green;margin-top:10px;"><input type="radio" class="radio-inline" value=' +
+                        i + ' name="dynradio" />' + ' ' + choice + '</li>').appendTo(choiceList);
+                } else {
+                    $('<li><input type="radio" class="radio-inline" value=' + i + ' name="dynradio" />' + ' ' + choice +
+                        '</li>').appendTo(choiceList);
+                }
             }
         }
 
@@ -548,7 +562,9 @@
     }
 
     function displayScore() {
-        $(document).find(".quizContainer > .result").text("Your Score is:" + correctAnswers + "/" + questions.length);
+        $(document).find(".quizContainer > .result").text("Your Score is:" + correctAnswers + "/" + questions.length +"     Scroll down to check the analysis");
+        // $(document).find(".quizContainer > .result").text("Scroll down to check the analysis" );
+        
         $(document).find(".quizContainer > .result").show();
         // console.log(correctAnswers);
         hideBox();
@@ -624,7 +640,10 @@
         }
 
         currentQuestion++;
-        viewResults();
+        
+        setTimeout(function () {
+                  viewResults();
+        }, 2000);
 
     }
 </script>

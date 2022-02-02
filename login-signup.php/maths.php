@@ -32,7 +32,7 @@
     <!-- ====nav bar starts=== -->
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+        <b>   <i>  <a class="navbar-brand"style="color:purple;font-size:1.7rem"href="#">Prayaas</a></i></b>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -46,7 +46,7 @@
                         <a class="nav-link" href="index.php"><b>Test</b></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><b>Results</b></a>
+                        <a class="nav-link" href="#"><b>Contact Us</b></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="logout.php"><b>Logout</b></a>
@@ -79,7 +79,7 @@
                 <tr>
 
                     <td>
-                        <a href="laplace.php" style="text-decoration: none;color: black;"> Lapalce Transform</a>
+                        <a href="instructions.php" style="text-decoration: none;color: black;"> Lapalce Transform</a>
                     </td>
                     <td>5</td>
                     <td>Medium</td>

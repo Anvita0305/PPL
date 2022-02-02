@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Prayaas Quiz App</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link ref="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js">
@@ -17,8 +17,8 @@
         left: 0;
         bottom: 0;
         width: 100%;
-        background-color: black;
-        color: white;
+        background:linear-gradient(#eee7e4,#6a76cc);
+        color: black;
         text-align: center;
     }
     .img{
@@ -83,9 +83,9 @@
 <body class="img">
 
 <!-- ====nav bar starts=== -->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
+    <nav class="navbar navbar-expand-lg navbar-light" style=" background:linear-gradient(#eee7e4,#6a76cc);">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+       <b>   <i>  <a class="navbar-brand"style="color:purple;font-size:1.7rem"href="#">Prayaas</a></i></b>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -96,10 +96,10 @@
                         <a class="nav-link active" aria-current="page" href="home.php"><b>Home</b></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php"><b>Test</b></a>
+                        <a class="nav-link" href="test.php"><b>Test</b></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><b>Results</b></a>
+                        <a class="nav-link" href="contact.php"><b>Contact Us</b></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="logout.php"><b>Logout</b></a>
@@ -228,7 +228,7 @@
             <ul style="list-style: none;text-decoration: none;color: white;margin-left:-1rem;">
                 <li><a href="home.php" style="list-style: none;text-decoration: none;color: white;margin-left:-1rem;">Home</a></li>
                 <li><a href="index.php" style="list-style: none;text-decoration: none;color: white;margin-left:-1rem;">Tests</a></li>
-                <li><a href="#" style="list-style: none;text-decoration: none;color: white;margin-left:-1rem;">Results</a></li>
+                <li><a href="contact.php" style="list-style: none;text-decoration: none;color: white;margin-left:-1rem;">Contact Us</a></li>
                 <li><a href="logout.php" style="list-style: none;text-decoration: none;color: white;margin-left:-1rem;">Logout</a></li>
             </ul>
         </div>
