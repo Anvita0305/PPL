@@ -40,7 +40,7 @@
 
 <body>
     <!-- ====nav bar starts=== -->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;z-index=3;">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -56,7 +56,7 @@
                         <a class="nav-link" href="index.php"><b>Test</b></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><b>Results</b></a>
+                        <a class="nav-link" href="contact1.php"><b>Contact Us</b></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="logout.php"><b>Logout</b></a>

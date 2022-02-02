@@ -46,7 +46,7 @@
                         <a class="nav-link" href="index.php"><b>Test</b></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><b>Contact Us</b></a>
+                        <a class="nav-link" href="contact1.php"><b>Contact Us</b></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="logout.php"><b>Logout</b></a>

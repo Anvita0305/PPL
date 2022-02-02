@@ -122,6 +122,39 @@
 </style>
 </head>
 <body>
+    <!-- ====nav bar starts=== -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav" style="font-size:1.25rem">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.php"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php"><b>Test</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><b>Contact Us</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="logout.php"><b>Logout</b></a>
+                    </li>
+                    <!-- <li class="nav-item">
+                                                            <a class="nav-link disabled">Results</a>
+                                                  </li> -->
+                </ul>
+
+            </div>
+        </div>
+        <div class="greet" id="greet" style="font-weight: 700;font-size: 1.5rem;float:right;padding-right:1rem;">
+            Welcome!</div>
+    </nav>
+    <!-- ====Nav Bar ends==== -->
 	<section id="last">
 	<!-- heading -->
 	<div class="full">
