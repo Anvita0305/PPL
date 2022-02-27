@@ -16,3 +16,12 @@
   <hr>
   <br>
   <h3>This Website has been built as a part of PPL Project</h3>
+  <br>
+<hr>
+<br>
+<h4>Authors:</h4>
+<ul>
+  <li>112003074 Chinmayee Kulkarni</li>
+  <li>112003080 Anvita Mahajan</li>
+  <li>112003083 Sayali Mate</li>
+</ul>
