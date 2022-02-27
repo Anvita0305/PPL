@@ -30,7 +30,7 @@
 <hr>
 <br>
 <h3>About Website:</h3>
-<p>Open a PDF file <a href="file:///C:/Users/anvit/Downloads/Prayas.pdf"></a></p>
+<p><a href="file:///C:/Users/anvit/Downloads/Prayas.pdf">For More information Click Here!</a></p>
 <h4>Authors:</h4>
 <ul>
   <li>112003074 Chinmayee Kulkarni</li>
