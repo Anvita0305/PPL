@@ -12,13 +12,25 @@
   Proctoring the behavior of student, Experience of
   past users etc are all of the features of this
   application</h3>
-  <br>
-  <hr>
-  <br>
   <h3>This Website has been built as a part of PPL Project</h3>
   <br>
 <hr>
 <br>
+<h3>TechStack</h3>
+<ul>
+  <h1>FrontEnd</h1>
+  <li>HTML</li>
+<li>CSS</li>
+<li>Javascript</li>
+<h1>BackEnd</h1>
+<li>PHP</li>
+<li>MySql</li>
+</ul>
+<br>
+<hr>
+<br>
+<h3>About Website:</h3>
+<embed src="file:///C:/Users/anvit/Downloads/Prayas.pdf" type="application/pdf" width="100%" height="100%">
 <h4>Authors:</h4>
 <ul>
   <li>112003074 Chinmayee Kulkarni</li>
