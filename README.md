@@ -29,9 +29,6 @@
 <br>
 <hr>
 <br>
-<h3>About Website:</h3>
-<iframe src="file:///C:/Users/anvit/Downloads/Prayas.pdf" width="100%" height="500px">
-    </iframe>
 <h4>Authors:</h4>
 <ul>
   <li>112003074 Chinmayee Kulkarni</li>
