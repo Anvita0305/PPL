@@ -15,4 +15,4 @@
   <br>
   <hr>
   <br>
-  <h3>This Websitehas been built as a part of PPL Project</h3>
+  <h3>This Website has been built as a part of PPL Project</h3>
