@@ -17,6 +17,7 @@
 <hr>
 <br>
 <h3>TechStack</h3>
+
 <ul>
   <h4>FrontEnd</h4>
   <li>HTML</li>
@@ -29,6 +30,8 @@
 <br>
 <hr>
 <br>
+<h3>About the Website</h3>
+[Prayas.pdf](https://github.com/Anvita0305/PPL/files/8148850/Prayas.pdf)
 <h4>Authors:</h4>
 <ul>
   <li>112003074 Chinmayee Kulkarni</li>
