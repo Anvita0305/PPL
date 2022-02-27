@@ -1,5 +1,5 @@
 <h1>Prayaas Quiz App</h1>
-<h2>"Considering the fact that “Practice Makes the Man
+<h3>"Considering the fact that “Practice Makes the Man
   Perfect "
   ,We provide practice questions to the
   students who face issues while preparing for the
@@ -11,8 +11,8 @@
   particularly Cet oriented. Analysis of the test ,
   Proctoring the behavior of student, Experience of
   past users etc are all of the features of this
-  application</h2>
+  application</h3>
   <br>
   <hr>
   <br>
-  <h2>This Websitehas been built as a part of PPL Project</h2>
+  <h3>This Websitehas been built as a part of PPL Project</h3>
