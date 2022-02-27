@@ -18,11 +18,11 @@
 <br>
 <h3>TechStack</h3>
 <ul>
-  <h1>FrontEnd</h1>
+  <h4>FrontEnd</h4>
   <li>HTML</li>
 <li>CSS</li>
 <li>Javascript</li>
-<h1>BackEnd</h1>
+<h4>BackEnd</h4>
 <li>PHP</li>
 <li>MySql</li>
 </ul>
