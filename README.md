@@ -30,7 +30,7 @@
 <hr>
 <br>
 <h3>About Website:</h3>
-<embed src="file:///C:/Users/anvit/Downloads/Prayas.pdf" type="application/pdf" width="100%" height="100%">
+<p>Open a PDF file <a href="file:///C:/Users/anvit/Downloads/Prayas.pdf"></a></p>
 <h4>Authors:</h4>
 <ul>
   <li>112003074 Chinmayee Kulkarni</li>
