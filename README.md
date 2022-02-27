@@ -32,6 +32,9 @@
 <br>
 <h3>About the Website</h3>
 [Prayas.pdf](https://github.com/Anvita0305/PPL/files/8148850/Prayas.pdf)
+<br>
+<hr>
+<br>
 <h4>Authors:</h4>
 <ul>
   <li>112003074 Chinmayee Kulkarni</li>
