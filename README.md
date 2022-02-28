@@ -22,6 +22,7 @@
   <h4>FrontEnd</h4>
   <li>HTML</li>
 <li>CSS</li>
+  <li>Bootstrap</li>
 <li>Javascript</li>
 <h4>BackEnd</h4>
 <li>PHP</li>
